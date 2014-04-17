@@ -1,10 +1,11 @@
-## The following pair of functions cache the inverse of a matrix
-## It is assumed that the matrix passed to the function is always invertible
+## The following pair of functions cache the inverse of a matrix on first calculation so that it
+## can be recalled on future attempts to invert it.
+## It is assumed that the matrix passed to the function is always invertible.
 
 ## To run:
-## Store an invertible matrix in a variable.  For Example: tmat<-matrix(c(3,6,2,7,4,8,1,9,0),nrow=3,ncol=3)
-## Pass this variable to makeCacheMatrix and store in a second variable.  xx<-makeCacheMatrix(tmat)
-## Pass the second variable to cacheSolve.  For Example: cacheSolve(xx)
+## Store an invertible matrix in a variable.  i.e.: tmat<-matrix(c(3,6,2,7,4,8,1,9,0),nrow=3,ncol=3)
+## Pass this variable to makeCacheMatrix and store in a 2nd variable.  i.e.: xx<-makeCacheMatrix(tmat)
+## Pass the second variable to cacheSolve.  i.e.: cacheSolve(xx)
 
 
 ## This function (makeCacheMatrix) creates a special "matrix" object that can cache its inverse.
